@@ -38,11 +38,14 @@ var ApiClient = (function () {
   }
 
   ApiClient.prototype.addMessage = function (message, callback) {
-    sendHttpRequest({
-      method: 'GET',
-      url: '/api/AppApi/addMessage/' + message
-    }, function (err, result) {
-      callback(err, result);
+    this.asyncTaskQueue.enqueue(function (next){
+      sendHttpRequest({
+        method: 'GET',
+        url: '/api/AppApi/addMessage/' + message
+      }, function (err, result) {
+        callback(err, result);
+        next();
+      });
     });
   };
 
