@@ -1,0 +1,20 @@
+{
+  "name": "async-task-queue",
+  "version": "1.0.0",
+  "description": "Javascript task queue without any timer (interval, setTimeout ..)",
+  "main": "async-task-queue.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talsu/async-task-queue.git"
+  },
+  "keywords": ["queue", "async-task-queue", "task queue"],
+  "author": "talsu <talsu84@gmail.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/talsu/async-task-queue/issues"
+  },
+  "homepage": "https://github.com/talsu/async-task-queue#readme"
+}
